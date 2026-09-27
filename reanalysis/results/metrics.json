@@ -1,0 +1,58 @@
+{
+ "n_ratings": 100480507,
+ "n_users": 480189,
+ "n_movies": 17770,
+ "duplicate_user_movie": 0,
+ "probe_listed": 1408395,
+ "probe_matched": 1408395,
+ "rating_share": [
+  0.046,
+  0.1008,
+  0.2867,
+  0.3359,
+  0.2306
+ ],
+ "first_date": "1999-11-11",
+ "last_date": "2005-12-31",
+ "hyper": {
+  "k": 50,
+  "lr": 0.005,
+  "reg": 0.02,
+  "reg_bias": 0.02,
+  "epochs": 20,
+  "lambda_i": 25,
+  "lambda_u": 10
+ },
+ "results": [
+  {
+   "split": "probe",
+   "n_train": 99072112,
+   "n_test": 1408395,
+   "global_mean": 1.12962,
+   "movie_mean": 1.05282,
+   "biases": 0.98425,
+   "mf": 0.91871,
+   "test_user_median_train_ratings": 98.0,
+   "test_share_users_le_50": 0.32554,
+   "test_share_after_last_train_rating": 0.63002
+  },
+  {
+   "split": "random",
+   "n_train": 80389755,
+   "n_test": 20090752,
+   "global_mean": 1.08527,
+   "movie_mean": 1.01136,
+   "biases": 0.92366,
+   "mf": 0.82544,
+   "test_user_median_train_ratings": 369.0,
+   "test_share_users_le_50": 0.05995,
+   "test_share_after_last_train_rating": 0.00347
+  }
+ ],
+ "reference": {
+  "movie_mean_quiz": 1.054,
+  "cinematch_quiz": 0.9514,
+  "cinematch_test": 0.9525,
+  "grand_prize_test": 0.8567
+ }
+}
